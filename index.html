@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ENTC Materials Hub</title>
+    <link rel="stylesheet" href="style.css">
+        
+</link>
+</head>
+<body>
+    <div class="circuit-background"></div>
+    
+    <!-- Floating ENTC Elements -->
+    <div class="floating-element">🔌</div>
+    <div class="floating-element">⚡</div>
+    <div class="floating-element">📡</div>
+    <div class="floating-element">🔬</div>
+    <div class="floating-element">💻</div>
+    <div class="floating-element">📶</div>
+
+    <div class="container">
+        <div class="hero-section">
+            <div class="hero-graphics">
+                <div class="graphic-item" title="Circuit Design">🔌</div>
+                <div class="graphic-item" title="PCB Design">🖥️</div>
+                <div class="graphic-item" title="Signal Processing">📡</div>
+                <div class="graphic-item" title="Electronics Lab">⚙️</div>
+            </div>
+        </div>
+
+        <header>
+            <h1>ENTC MATERIALS HUB</h1>
+            <p class="subtitle">Your One-Stop Resource Center</p>
+            <p class="tagline">Electronics & Telecommunication Engineering</p>
+            <div class="header-buttons">
+                <button class="header-btn" onclick="showLogin()">
+                    <span class="btn-icon">🔐</span>
+                    <span>Login</span>
+                </button>
+                <button class="header-btn" onclick="showMaterials()">
+                    <span class="btn-icon">📚</span>
+                    <span>Materials</span>
+                </button>
+                <button class="header-btn" onclick="showMidSemHistory()">
+                    <span class="btn-icon">📅</span>
+                    <span>MIS-Wise Timetable</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="grid-container" id="materialsSection" style="display: none;">
+            <!-- Subject Card 1 -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <div>
+                        <h2 class="subject-title">Elements Of Electronics Engg.</h2>
+                        <p class="subject-code">ENTC 301</p>
+                    </div>
+                    <div class="subject-icon">📡</div>
+                </div>
+                <div class="materials-list">
+                    <div class="material-item">
+                        <span class="material-icon">📚</span>
+                        <span class="material-name"><a class="noteslink" href="Electronic_Devices_and_Circuit_Theory_11th_Edition_Boylestad_Nashelsky.pdf">Textbook -Boysteald</a></span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📝</span>
+                        <span class="material-name"><a class="noteslink" target="_blank" href="https://www.notion.so/Elements-of-Electronics-engg-28c667b05d8280c181d9cc16e19d6b2c?v=28c667b05d8281fe8fae000c8bcbb1aa">Lecture Notes - All Units</a></span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📄</span>
+                        <span class="material-name"><a link="EEE endsem 2024-25.pdf"></a>Previous Year Paper-EndSem</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject Card 2 -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <div>
+                        <h2 class="subject-title">Communication Systems</h2>
+                        <p class="subject-code">ENTC 302</p>
+                    </div>
+                    <div class="subject-icon">📶</div>
+                </div>
+                <div class="materials-list">
+                    <div class="material-item">
+                        <span class="material-icon">📚</span>
+                        <span class="material-name">Textbook - Taub & Schilling</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📝</span>
+                        <span class="material-name">Class Notes - Complete</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📄</span>
+                        <span class="material-name">Question Bank</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject Card 3 -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <div>
+                        <h2 class="subject-title">Microprocessors & Controllers</h2>
+                        <p class="subject-code">ENTC 303</p>
+                    </div>
+                    <div class="subject-icon">💻</div>
+                </div>
+                <div class="materials-list">
+                    <div class="material-item">
+                        <span class="material-icon">📚</span>
+                        <span class="material-name">Textbook - Mazidi</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📝</span>
+                        <span class="material-name">Lab Manual & Programs</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📄</span>
+                        <span class="material-name">Exam Papers & Solutions</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject Card 4 -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <div>
+                        <h2 class="subject-title">Electromagnetic Waves</h2>
+                        <p class="subject-code">ENTC 304</p>
+                    </div>
+                    <div class="subject-icon">⚡</div>
+                </div>
+                <div class="materials-list">
+                    <div class="material-item">
+                        <span class="material-icon">📚</span>
+                        <span class="material-name">Textbook - Sadiku</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📝</span>
+                        <span class="material-name">Theory Notes</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📄</span>
+                        <span class="material-name">Solved Problems</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject Card 5 -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <div>
+                        <h2 class="subject-title">VLSI Design</h2>
+                        <p class="subject-code">ENTC 305</p>
+                    </div>
+                    <div class="subject-icon">🔌</div>
+                </div>
+                <div class="materials-list">
+                    <div class="material-item">
+                        <span class="material-icon">📚</span>
+                        <span class="material-name">Textbook - Weste & Harris</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📝</span>
+                        <span class="material-name">Design Notes & Diagrams</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📄</span>
+                        <span class="material-name">Project References</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject Card 6 -->
+            <div class="subject-card">
+                <div class="subject-header">
+                    <div>
+                        <h2 class="subject-title">Antenna & Wave Propagation</h2>
+                        <p class="subject-code">ENTC 306</p>
+                    </div>
+                    <div class="subject-icon">📻</div>
+                </div>
+                <div class="materials-list">
+                    <div class="material-item">
+                        <span class="material-icon">📚</span>
+                        <span class="material-name">Textbook - Balanis</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📝</span>
+                        <span class="material-name">Study Material</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">📄</span>
+                        <span class="material-name">Previous Year Questions</span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Timetable Section -->
+        <div class="timetable-container" id="timetableSection">
+            <div class="timetable-header">
+                <div class="timetable-header-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/>
+                    </svg>
+                </div>
+                <h2>Get Your Timetable</h2>
+                <p class="timetable-subtitle">Enter your details to view your class schedule</p>
+            </div>
+
+            <div class="form-group">
+                <label for="mis">MIS Number *</label>
+                <div class="input-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    <input type="text" id="mis" placeholder="Enter your MIS No. (e.g., 612507153)" required>
+                </div>
+            </div>
+
+            <button class="btn-timetable" onclick="getTimetable()">View Timetable</button>
+
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">Access your personalized class schedule</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">Real-time updates on class timings</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">Download and share your timetable</div>
+                </div>
+            </div>
+
+            <div class="info-text">
+                Having trouble? <a href="#contact">Contact Support</a>
+            </div>
+        </div>
+
+        <!-- Timetable Display Section -->
+        <div class="timetable-display" id="timetableDisplay">
+            <button class="back-btn" onclick="backToForm()">← Back to Form</button>
+            
+            <div class="student-info">
+                <h2 id="studentName">STUDENT NAME</h2>
+                <p id="studentDetails">MIS: <span id="displayMIS"></span> | <span id="displayDivision"></span></p>
+            </div>
+
+            <table class="timetable-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody id="timetableBody">
+                    <!-- Timetable will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- User Info Display -->
+        <div class="user-info" id="userInfo">
+            <span id="userName">Welcome, User!</span>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+
+        <!-- Login Modal -->
+        <div class="login-modal" id="loginModal">
+            <div class="login-container">
+                <button class="login-close" onclick="closeLogin()">×</button>
+                <div class="login-header">
+                    <h2>Login to ENTC Hub</h2>
+                    <p>Access materials and timetables</p>
+                </div>
+                <form class="login-form" onsubmit="handleLogin(event)">
+                    <input type="text" id="loginMIS" placeholder="Enter MIS Number" required>
+                    <input type="password" id="loginPassword" placeholder="Enter Password" required>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+                <div class="back-to-home">
+                    <button onclick="closeLogin()">
+                        <span>🏠</span>
+                        <span>Back to Home</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chatbot Toggle Button -->
+        <div class="chatbot-toggle" onclick="toggleChatbot()">
+            <span>💬</span>
+        </div>
+
+        <!-- Chatbot Container -->
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chatbot-header">
+                <h3>ENTC Assistant</h3>
+                <button class="chatbot-close" onclick="toggleChatbot()">×</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot">
+                    Hi! I'm your ENTC Assistant. How can I help you today?
+                </div>
+            </div>
+            <div class="chatbot-input-container">
+                <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your message..." onkeypress="handleChatKeyPress(event)">
+                <button class="chatbot-send" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js">
+       
+    </script>
+</body>
+</html>
